@@ -410,3 +410,73 @@ h2 {
     color: #a78bfa;
     border: 1px solid rgba(139, 92, 246, 0.3);
 }
+
+
+/* Webinars Section */
+.webinars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.webinar-card {
+    background: rgba(30, 27, 75, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.webinar-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(139, 92, 246, 0.5);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.3);
+}
+
+.webinar-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #312e81, #1e1b4b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: rgba(236, 72, 153, 0.5);
+    overflow: hidden;
+    position: relative;
+}
+
+.webinar-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.webinar-card:hover .webinar-image img {
+    transform: scale(1.1);
+}
+
+.webinar-info {
+    padding: 1.5rem;
+}
+
+.webinar-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #e4e4e7;
+}
+
+.webinar-date {
+    font-size: 0.9rem;
+    color: #ec4899;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+.webinar-info p {
+    color: #94a3b8;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
