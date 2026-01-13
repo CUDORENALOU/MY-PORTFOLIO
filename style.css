@@ -480,3 +480,45 @@ h2 {
     line-height: 1.6;
     font-size: 0.95rem;
 }
+
+  
+  /* Contact Section */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(30, 27, 75, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    border-color: rgba(139, 92, 246, 0.5);
+    transform: translateX(10px);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+}
+
+.contact-item strong {
+    color: #8b5cf6;
+    min-width: 100px;
+    font-weight: 600;
+}
+
+.contact-item a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #ec4899;
+}
