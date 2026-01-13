@@ -333,3 +333,80 @@ h2 {
     color: #94a3b8;
     line-height: 1.6;
 }
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.project-card {
+    background: rgba(30, 27, 75, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(139, 92, 246, 0.5);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.3);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(135deg, #1e1b4b, #312e81);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: rgba(139, 92, 246, 0.5);
+    overflow: hidden;
+    position: relative;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #e4e4e7;
+}
+
+.project-info p {
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.3rem 0.8rem;
+    background: rgba(139, 92, 246, 0.2);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #a78bfa;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
